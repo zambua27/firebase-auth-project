@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Жеке кабинет — Firebase Auth</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard" class="loading">
+  <main class="card wide">
+    <div class="logo">🔥 FIREBASE AUTH</div>
+    <div class="profile">
+      <div id="avatar" class="avatar"></div>
+      <div>
+        <h1>Сәлем, <span id="user-name"></span>!</h1>
+        <p class="subtitle" style="margin:0">Бұл бетті тек жүйеге кірген пайдаланушылар көреді</p>
+      </div>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <table>
+      <tr><td>Email</td><td id="user-email"></td></tr>
+      <tr><td>Кіру тәсілі</td><td id="user-provider"></td></tr>
+      <tr><td>Email күйі</td><td id="user-verified"></td></tr>
+      <tr><td>Тіркелген күні</td><td id="user-created"></td></tr>
+      <tr><td>Соңғы кіру</td><td id="user-last"></td></tr>
+    </table>
+
+    <button id="verify-btn" class="btn-secondary">Растау хатын қайта жіберу</button>
+    <button id="logout-btn" class="btn-danger">Шығу</button>
+  </main>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

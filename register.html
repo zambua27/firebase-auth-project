@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тіркелу — Firebase Auth</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+  <main class="card">
+    <div class="logo">🔥 FIREBASE AUTH</div>
+    <h1>Тіркелу</h1>
+    <p class="subtitle">Жаңа аккаунт құру</p>
+
+    <div id="message" class="message"></div>
+
+    <form id="register-form">
+      <label for="name">Аты-жөні</label>
+      <input type="text" id="name" name="name" placeholder="Асқар Мулхат" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+      <label for="password">Құпиясөз</label>
+      <input type="password" id="password" name="password" minlength="6" placeholder="кемінде 6 таңба" required>
+
+      <label for="confirm">Құпиясөзді қайталаңыз</label>
+      <input type="password" id="confirm" name="confirm" minlength="6" required>
+
+      <button type="submit" class="btn-primary">Тіркелу</button>
+    </form>
+
+    <div class="divider">немесе</div>
+    <button id="google-btn" class="btn-google">Google арқылы тіркелу</button>
+
+    <p class="links">Аккаунтыңыз бар ма? <a href="index.html">Кіру</a></p>
+  </main>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
